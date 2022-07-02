@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dokumencoba</title>
+        <link rel="stylesheet" href="css/Style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Wellcome</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">MyPortofolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="source/sun.png" id="matahari">
+            <img src="source/cloud.png" id="cloud">
+            <h2 id="tulis">Wellcome to my Website</h2>
+            <a href="#cont" id="btn">explor now</a>
+            <img src="source/1land.png" id="bgs">
+            <img src="source/land.png" id="land">
+        </section>
+        <div class="contn" id="cont">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Asperiores magni doloribus et omnis atque totam nihil nostrum quo,
+             neque sapiente corporis fugiat quod hic provident odio dicta incidunt. Tempora, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, veritatis eligendi. Cum sed perspiciatis consequatur assumenda suscipit fuga dolores reprehenderit modi asperiores! Modi asperiores nesciunt quidem nemo culpa maiores quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam fugiat recusandae, atque minus eum consequatur repellat ducimus assumenda culpa tempora velit repudiandae molestiae vero eaque dolorem veritatis nam id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quibusdam facilis? Ipsam quam officia earum. Commodi voluptates corrupti, exercitationem reprehenderit cum ipsa, velit aperiam sapiente officia vero provident placeat aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsa in deleniti quaerat, odit repellendus, delectus qui ipsam libero consectetur illo dolores nostrum soluta inventore nemo, aut sint provident possimus.</p>
+             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, odio numquam, repudiandae voluptas nihil non facere esse, quas tempore quae perspiciatis labore in adipisci eligendi. Saepe nisi beatae ipsa libero?</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores repellat reiciendis nulla, nobis corporis ut dolore. Consequatur beatae culpa quia dolores reprehenderit animi eum natus modi, laudantium, suscipit, alias commodi.</p>
+        </div>
+        <script>
+            let langit = document.getElementById('matahari');
+            let bgs = document.getElementById('bgs');
+            let tulis = document.getElementById('tulis');
+            let btn = document.getElementById('btn');
+            let land = document.getElementById('land');
+            let cont = document.getElementById('cont');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+
+                langit.style.top = value * 1.50 + 'px';
+                matahari.style.top = value * 1 + 'px';
+                tulis.style.marginRight = value * 6 + 'px';
+                btn.style.top = value * 2 + 'px';
+                bgs.style.top = value * 1.25 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+        </script>
+    </body>
+</html>
